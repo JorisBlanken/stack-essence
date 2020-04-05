@@ -1,0 +1,26 @@
+{-# START_FILE {{name}}.cabal #-}
+name:           {{name}}
+version:        0.0.0
+cabal-version:  >= 1.10
+
+executable {{name}}
+    hs-source-dirs: src
+    main-is:        Main.hs
+    ghc-options:    -threaded
+    build-depends:  base
+
+{-# START_FILE stack.yaml #-}
+resolver: lts-15.3
+packages:
+- '.'
+extra-deps: []
+
+{-# START_FILE Setup.hs #-}
+import Distribution.Simple
+main = defaultMain
+
+{-# START_FILE src/Main.hs #-}
+module Main where
+
+main :: IO ()
+main = return ()
