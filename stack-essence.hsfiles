@@ -9,12 +9,6 @@ executable {{name}}
     ghc-options:    -threaded
     build-depends:  base
 
-{-# START_FILE stack.yaml #-}
-resolver: lts-15.3
-packages:
-- '.'
-extra-deps: []
-
 {-# START_FILE Setup.hs #-}
 import Distribution.Simple
 main = defaultMain
