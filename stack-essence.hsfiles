@@ -18,3 +18,25 @@ module Main where
 
 main :: IO ()
 main = return ()
+
+{-# START_FILE .vscode/tasks.json #-}
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "stack build"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "stack run"
+        },
+        {
+            "label": "install",
+            "type": "shell",
+            "command": "stack install"
+        }
+    ]
+}
