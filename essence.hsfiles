@@ -4,7 +4,7 @@ version:        0.0.0
 cabal-version:  >= 1.10
 
 executable {{name}}
-    hs-source-dirs: src
+    hs-source-dirs: {{name}}
     main-is:        Main.hs
     ghc-options:    -threaded
     build-depends:  base
@@ -13,7 +13,7 @@ executable {{name}}
 import Distribution.Simple
 main = defaultMain
 
-{-# START_FILE src/Main.hs #-}
+{-# START_FILE {{name}}/Main.hs #-}
 module Main where
 
 main :: IO ()
